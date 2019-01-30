@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Application 1</title>
+  <link rel="stylesheet" href="phone.css">
+</head>
+
+<body>
+  <div class="nav">
+    <button class="tab" id="dialer-button">Dialer</button>
+    <button class="tab" id="list-button">Contact List</button>
+    <button class="tab" id="new-button">Add Contact</button>
+  </div>
+  <div class="content">
+    <div class="screen" id="dialer-screen">
+      <h2 class="title">Dialer</h2>
+      <div class="content">
+        <form class="entry-view">
+          <input type="text" name="number">
+        </form>
+        <button class="keys">1</button>
+        <button class="keys">2</button>
+        <button class="keys">3</button>
+        <button class="keys">4</button>
+        <button class="keys">5</button>
+        <button class="keys">6</button>
+        <button class="keys">7</button>
+        <button class="keys">8</button>
+        <button class="keys">9</button>
+        <button class="keys">*</button>
+        <button class="keys">0</button>
+        <button class="keys">#</button>
+        <button class="big-key">Dial</button>
+        <button class="big-key">Clear</button>
+      </div>
+    </div>
+    <div class="screen" id="list-screen">
+      <h2 class="title">Contact List</h2>
+      <div class="content">
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+        <button class="big-key">Name</button>
+      </div>
+    </div>
+    <div class="screen" id="new-screen">
+      <h2 class="title">Add Contact</h2>
+      <div class="content">
+        <form>
+          Name: <input type="text" name="name" placeholder="John Smith">
+          Phone Number: <input type="text" name="number" placeholder="123-456-7890">
+          Email: <input type="text" name="email" placeholder="john.smith@email.com">
+        </form>
+        <button class="big-key">Add Contact</button>
+        <button class="big-key">Clear</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+</body>
+
+</html>
