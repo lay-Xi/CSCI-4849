@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Application 1</title>
+  <link rel="stylesheet" href="web_accessibility.css">
+</head>
+
+<body>
+  <div class="nav" role="navigation">
+    <div aria-live="polite">
+      <button class="tab" id="dialer-button" accesskey="d">Dialer</button>
+      <button class="tab" id="list-button" accesskey="c">Contact List</button>
+      <button class="tab" id="new-button" accesskey="v">Add Contact</button>
+      <button class="tab" id="help-button" accesskey="f">Help</button>
+    </div>
+  </div>
+  <div class="content" role="main">
+    <div class="screen" id="dialer-screen">
+      <h2 class="title">Dialer</h2>
+        <form class="entry-view">
+          <input type="text" id="number_input" accesskey="x">
+        </form>
+        <div id="dialer">
+          <button class="keys">1</button>
+          <button class="keys">2</button>
+          <button class="keys">3</button>
+          <button class="keys">4</button>
+          <button class="keys">5</button>
+          <button class="keys">6</button>
+          <button class="keys">7</button>
+          <button class="keys">8</button>
+          <button class="keys">9</button>
+          <button class="keys">*</button>
+          <button class="keys">0</button>
+          <button class="keys">#</button>
+        </div>
+          <button class="big-key">Dial</button>
+          <button class="big-key" id="clear-button" accesskey="s">Clear</button>
+    </div>
+    <div class="screen" id="list-screen">
+      <h2 class="title">Contact List</h2>
+      <div class="content">
+        <table>
+          <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <th>
+              <figure>
+                <img src="rando_face.png" alt="Photo of Rando1" longdesc="This image is a portrait photo of Rando1. (I.E. The photo was made by me in Adobe Illustrator)">
+                <figcaption>Rando1</figcaption>
+              </figure>
+            </th>
+            <th>Rando1</th>
+            <th>1234567890</th>
+            <th>rando1@website.com</th>
+          </tr>
+          <tr>
+            <th>
+              <figure>
+                <img src="rando_face.png" alt="Photo of Rando2" longdesc="This image is a portrait photo of Rando2. (I.E. The photo was made by me in Adobe Illustrator)">
+                <figcaption>Rando2</figcaption>
+              </figure>
+            </th>
+            <th>Rando2</th>
+            <th>4567890123</th>
+            <th>rando2@website.org</th>
+          </tr>
+          <tr>
+            <th>
+              <figure>
+                <img src="rando_face.png" alt="Photo of Rando2" longdesc="This image is a portrait photo of Rando3. (I.E. The photo was made by me in Adobe Illustrator)">
+                <figcaption>Rando3</figcaption>
+              </figure>
+            </th>
+            <th>Rando3</th>
+            <th>7890123456</th>
+            <th>rando3@website.net</th>
+          </tr>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="screen" id="new-screen">
+      <h2 class="title">Add Contact</h2>
+      <div class="content">
+        <form>
+          Name: <input type="text" name="name" placeholder="John Smith">
+          Phone Number: <input type="text" name="number" placeholder="123-456-7890">
+          Email: <input type="text" name="email" placeholder="john.smith@email.com">
+        </form>
+        <button class="big-key">Add Contact</button>
+        <button class="big-key">Clear</button>
+      </div>
+    </div>
+    <div class="screen" id="help-screen">
+      <h2 class="title">Help</h2>
+      <div class="content">
+        <h3>List of accessibility features</h3>
+        <ul>
+          <li>Accessible tables</li>
+          <li>Help Tab</li>
+          <li>Captioned Images</li>
+          <li>ARIA lankmark roles</li>
+          <li>ARIA live regions</li>
+          <li>Keyboard shortcuts (listed below)</li>
+        </ul>
+        <table>
+          <tr>
+            <th>Shortcut</th>
+            <th>Windows</th>
+            <th>Mac</th>
+            <th>Access Key</th>
+          </tr>
+          <tr>
+            <th>Dailer</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>D</th>
+          </tr>
+          <tr>
+            <th>Contact List</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>C</th>
+          </tr>
+          <tr>
+            <th>Add Contact</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>V</th>
+          </tr>
+          <tr>
+            <th>Help</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>F</th>
+          </tr>
+          <tr>
+            <th>Input field under Dialer</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>X</th>
+          </tr>
+          <tr>
+            <th>Clear field under Dailer</th>
+            <th>Shift + Alt</th>
+            <th>Command + Option</th>
+            <th>S</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="web_accessibility.js"></script>
+</body>
+
+</html>
