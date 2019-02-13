@@ -18,8 +18,8 @@
   <div class="content" role="main">
     <div class="screen" id="dialer-screen">
       <h2 class="title">Dialer</h2>
-        <form class="entry-view">
-          <input type="text" id="number_input" label="dialer_input" accesskey="x">
+        <form class="entry-view" label="dialer_input">
+          <input type="text" id="number_input" accesskey="x">
         </form>
         <div id="dialer">
           <button class="keys">1</button>
@@ -88,10 +88,10 @@
     <div class="screen" id="new-screen">
       <h2 class="title">Add Contact</h2>
       <div class="content">
-        <form>
-          Name: <input type="text" name="name" label="contact_name" placeholder="John Smith">
-          Phone Number: <input type="text" name="number" label="contact_number" placeholder="123-456-7890">
-          Email: <input type="text" name="email" lable="contact_email" placeholder="john.smith@email.com">
+        <form label="new_contact_info">
+          Name: <input type="text" name="name" placeholder="John Smith">
+          Phone Number: <input type="text" name="number" placeholder="123-456-7890">
+          Email: <input type="text" name="email" placeholder="john.smith@email.com">
         </form>
         <button class="big-key">Add Contact</button>
         <button class="big-key">Clear</button>
