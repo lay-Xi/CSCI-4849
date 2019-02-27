@@ -262,8 +262,8 @@ window.addEventListener('shake', function () {
   let currencyFrom = document.getElementById('currency_from').value;
   let currencyTo = document.getElementById('currency_to').value;
 
-  $('currency_from').val('currencyTo');
-  $('currency_to').val('currencyFrom');
+  $('#currency_from').val('currencyTo');
+  $('#currency_to').val('currencyFrom');
 
   alert('Currency Swapped');
 }, false);
