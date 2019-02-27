@@ -269,3 +269,6 @@ window.addEventListener('shake', function () {
 function stopShake() {
   shakeEvent.stop();
 }
+
+//check if shake is supported or not.
+    if(!("ondevicemotion" in window)){alert("Not Supported");}
