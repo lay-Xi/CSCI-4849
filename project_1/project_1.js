@@ -255,7 +255,7 @@ $('.convert_button').click(() => {
   $('.output').text(amountTo);
 });
 
-let shakeEvent = new Shake({ threshold: 15 });
+let shakeEvent = new Shake({ threshold: 10 });
 shakeEvent.start();
 
 window.addEventListener('shake', function () {
@@ -264,6 +264,8 @@ window.addEventListener('shake', function () {
 
   $('currency_from').val('currencyTo');
   $('currency_to').val('currencyFrom');
+
+  alert('Currency Swapped');
 }, false);
 
 //stop listening
