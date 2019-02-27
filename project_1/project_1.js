@@ -255,9 +255,11 @@ $('.convert_button').click(() => {
   $('.output').text(amountTo);
 });
 
+// Make new shake object
 let shakeEvent = new Shake({ threshold: 10 });
 shakeEvent.start();
 
+// When shake, swap currencies
 window.addEventListener('shake', () => {
   let currencyFrom = document.getElementById('currency_from').value;
   let currencyTo = document.getElementById('currency_to').value;
@@ -268,7 +270,7 @@ window.addEventListener('shake', () => {
   alert('Currency Swapped');
 }, false);
 
-//stop listening
+// Stop event
 function stopShake() {
   shakeEvent.stop();
 }
