@@ -262,13 +262,11 @@ window.addEventListener('shake', function () {
   let currencyFrom = document.getElementById('currency_from').value;
   let currencyTo = document.getElementById('currency_to').value;
 
-  alert("test");
+  $('currency_from').val('currencyTo');
+  $('currency_to').val('currencyFrom');
 }, false);
 
 //stop listening
 function stopShake() {
   shakeEvent.stop();
 }
-
-//check if shake is supported or not.
-    if(!("ondevicemotion" in window)){alert("Not Supported");}
