@@ -258,7 +258,7 @@ $('.convert_button').click(() => {
 let shakeEvent = new Shake({ threshold: 10 });
 shakeEvent.start();
 
-window.addEventListener('shake', function () {
+window.addEventListener('shake', () => {
   let currencyFrom = document.getElementById('currency_from').value;
   let currencyTo = document.getElementById('currency_to').value;
 
