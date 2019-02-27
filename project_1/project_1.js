@@ -266,8 +266,6 @@ window.addEventListener('shake', () => {
 
   $('#currency_from').val(currencyTo);
   $('#currency_to').val(currencyFrom);
-
-  alert('Currency Swapped');
 }, false);
 
 // Stop event
