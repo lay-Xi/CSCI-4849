@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Domine|Roboto');
+
+/* PC Screen size */
+body {
+  background: url(background.png) no-repeat center center fixed;
+}
+
+.title {
+  font-family: 'Domine', serif;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  color: snow;
+}
+
+.explanation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: snow;
+}
+
+form {
+  font-family: 'Roboto', san-serif;
+  font-size: 1em;
+  text-align: center;
+  color: snow;
+  padding: 5% 0 5% 0;
+}
+
+form select {
+  font-family: 'Roboto', san-serif;
+  font-size: 1em;
+  width: 20%;
+  border: 1px solid green;
+  border-radius: 4px;
+}
+
+form input {
+  font-family: 'Roboto', san-serif;
+  font-size: 1em;
+  border: 1px solid green;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.output {
+  font-family: 'Roboto', san-serif;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 4% 0 0 0;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  display: block;
+  margin: auto;
+  background-color: green;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+}
+
+/* Tablet size */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 1.8em;
+  }
+}
+
+/* Phone size */
+@media screen and (max-width: 425px) {
+  .title {
+    font-size: 1.6em;
+  }
+
+  .currency_select {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+
+  .currency_select option {
+    text-align: center;
+  }
+
+  .input_field {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Project 1 - UI Programming</title>
+
+  <link rel="stylesheet" href="project_1.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+  <script src="project_1.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1 class="title">Currency Exchange Rate</h1>
+    <p class="explanation">
+      This currency exchange application will help you convert currency
+      of the top 10 most traded currency in 2016 based on exchange rates
+      as of 2019.
+    </p>
+
+    <div class="conversion_form">
+      <form>
+        Convert
+        <select class="currency_select" id="currency_from">
+          <option value="usd">United States dollar</option>
+          <option value="eur">Euro</option>
+          <option value="jpy">Japanese yen</option>
+          <option value="gbp">Pound sterling</option>
+          <option value="aud">Australian dollar</option>
+          <option value="cad">Canadian dollar</option>
+          <option value="chf">Swiss franc</option>
+          <option value="cny">Renminbi</option>
+          <option value="sek">Swedish krona</option>
+          <option value="nzd">New Zealand dollar</option>
+        </select>
+        <input type="number" class="input_field" id="amount_from" placeholder="Enter an amount">
+        to
+        <select class="currency_select" id="currency_to">
+          <option value="usd">United States dollar</option>
+          <option value="eur">Euro</option>
+          <option value="jpy">Japanese yen</option>
+          <option value="gbp">Pound sterling</option>
+          <option value="aud">Australian dollar</option>
+          <option value="cad">Canadian dollar</option>
+          <option value="chf">Swiss franc</option>
+          <option value="cny">Renminbi</option>
+          <option value="sek">Swedish krona</option>
+          <option value="nzd">New Zealand dollar</option>
+        </select>
+
+        <h3 class="output"></h3>
+      </form>
+    </div>
+
+    <button class="convert_button">Convert</button>
+  </div>
+</body>
+
+</html>
