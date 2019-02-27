@@ -254,3 +254,18 @@ $('.convert_button').click(() => {
 
   $('.output').text(amountTo);
 });
+
+let shakeEvent = new Shake({ threshold: 15 });
+shakeEvent.start();
+
+window.addEventListener('shake', function () {
+  let currencyFrom = document.getElementById('currency_from').value;
+  let currencyTo = document.getElementById('currency_to').value;
+
+  alert("test");
+}, false);
+
+//stop listening
+function stopShake() {
+  shakeEvent.stop();
+}
