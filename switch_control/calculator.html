@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			Calculator Demo
+		</title>
+		<link rel="stylesheet" href="calculator.css" type="text/css">
+	</head>
+	<body>
+		<div id="calculator">
+			<h1>calc U l8r</h1>
+			<div class="calculator_row">
+				<input id="number_input">
+			</div>
+			<div class="calculator_row">
+				<button id="button7" class="calcButton row1 col1">7</button>
+				<button id="button8" class="calcButton row1 col2">8</button>
+				<button id="button9" class="calcButton row1 col3">9</button>
+				<button id="buttonDivide" class="calcButton row1 col4 function">/</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button4" class="calcButton row2 col1">4</button>
+				<button id="button5" class="calcButton row2 col2">5</button>
+				<button id="button6" class="calcButton row2 col3">6</button>
+				<button id="buttonMultiply" class="calcButton row2 col4 function">*</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button1" class="calcButton row3 col1">1</button>
+				<button id="button2" class="calcButton row3 col2">2</button>
+				<button id="button3" class="calcButton row3 col3">3</button>
+				<button id="buttonAdd" class="calcButton row3 col4 function">+</button>
+			</div>
+			<div class="calculator_row">
+				<button id="button0" class="calcButton row4 col1">0</button>
+				<button id="buttonClear" class="calcButton row4 col2 meta">C</button>
+				<button id="buttonEquals" class="calcButton row4 col3 meta">=</button>
+				<button id="buttonSubtract" class="calcButton row4 col4 function">-</button>
+			</div>
+		</div>
+		<div id="comments">
+			<h2>About this app</h2>
+			<ul>
+				<li>
+          I have implemented a 5-key method for navigating and using the calculator. The arrow keys are used for movement (up, down, left, right) and the space bar is used for selection.
+          Another 2-key layout is commented out in the code but, that method uses the right arrow key as movement and the down arrow as selection.
+        </li>
+				<li>
+          <p>For my test, I tested the 5-key layout and a 2-key layout enter in the following equation, 98*7-654+321/2, followed by clearing the calculator. I had both layouts do this test 5 times and recorded the time it took
+          and error that happened.</p>
+          <p>The 5-key layout had a 18.224 second average speed for the test with a high of 20.72 seconds when 1 error occured.</p>
+          <p>The 2-key layout had a 40.736 second average speed for the test with a high of 50.13 seconds when 1 error occured.</p>
+          <p>From these results, I can conlude that having more keys/mobility allows the user to complete the task twice as fast, which is to be expected. The 5-key layout is much more forgiving with mistakes as it only added
+          2 extra seconds when a mistake was made while the 2-key layout added an extra 10 whole seconds from the average when a single mistake was made.</p>
+        </li>
+				<li>I had tried to implement a one-key layout but, I had a bug where if you press the key twice, it would register the second key press as both a double tap and a single tap and would
+        select and move to the next button. </li>
+			</ul>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+		<script src="calculator.js" type="text/javascript"></script>
+	</body>
+</html>
